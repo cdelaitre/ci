@@ -11,5 +11,6 @@ if [ ! -s ${FILE} ]; then
 fi
 if [ -s ${FILE} ]; then
   docker build --rm=true -t "cdelaitre/tomcat7" . |& tee build.log
+  rm -f ${FILE}
 fi
 exit 0
