@@ -21,6 +21,7 @@ Replace __PROXY_HOST__ and __PROXY_PORT__ to set http_proxy env
     - tomcat7
   -  postgres91
 
+###Result :
 ```
 $ docker images
 REPOSITORY                      TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
