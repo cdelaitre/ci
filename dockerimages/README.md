@@ -4,7 +4,10 @@
 
 ###Requirements :
 - docker (version 1.4.1 used here)
-  - yum install docker-io (on centos6)
+  - installation on centos6:
+    - kernel >= 2.6.32-431 (version 2.6.32-504.12.2.el6.x86_64 used here)
+    - add epel6 repo : yum install http://mirror.pnl.gov/epel/6/i386/epel-release-6-8.noarch.rpm
+    - install docker : yum install docker-io
 - tools:
   - wget (eventually set http_proxy in /etc/wgetrc)
   - tee
