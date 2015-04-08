@@ -1,14 +1,18 @@
-#Requirements :
+# [CI Continuous Integration](../README.md)
+
+## dockerimages
+
+###Requirements :
 - docker (version 1.4.1 used here)
 - wget (eventually set http_proxy in /etc/wgetrc)
 
-#Usage :
+###Usage :
 ```
 cd <image>
 ./build.sh
 ```
 
-#Notes :
+###Notes :
 centos6/Dockerfile
 ```
 Replace __PROXY_HOST__ and __PROXY_PORT__ to set http_proxy env
