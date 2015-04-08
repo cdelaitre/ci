@@ -13,14 +13,14 @@
 ---> Package python-paramiko.noarch 0:1.7.5-2.1.el6 will be installed
 ```
   - configuration
-    1. root@server:
+    - root@server:
 ```
 useradd ansible
 su - ansible
 ssh-keygen -t rsa -C "ansible"
 chmod 600 .ssh/id_rsa*
 ```
-    2. root@client:
+    - root@client:
 ```
 useradd ansible
 vi /etc/sudoers
@@ -28,7 +28,7 @@ vi /etc/sudoers
 Defaults:ansible    !requiretty
 ansible         ALL=(ALL)       NOPASSWD: ALL
 ```
-    3. ansible@server:
+    - ansible@server:
 ```
 ssh-copy-id client
 ssh client
