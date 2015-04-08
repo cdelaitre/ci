@@ -4,6 +4,7 @@
 
 ###Requirements :
 - docker (version 1.4.1 used here)
+  - yum install docker-io (on centos6)
 - wget (eventually set http_proxy in /etc/wgetrc)
 
 ###Usage :
