@@ -3,6 +3,10 @@
 ## dockerimages/
 Contains scripts and files to build images based on centos6
 
+###Requirements :
+- docker (used version 1.4.1)
+- wget (with eventually correct http_proxy set in /etc/wgetrc)
+
 ###Usage :
 ```
 cd dockerimages/<image>
