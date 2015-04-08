@@ -15,13 +15,8 @@
 ###Usage :
 ```
 cd <image>
+  image: centos6, openjdk7, tomcat7, postgres91, postgres93
 ./build.sh
-```
-
-###Notes :
-centos6/Dockerfile
-```
-Replace __PROXY_HOST__ and __PROXY_PORT__ to set http_proxy env
 ```
 
 ###Image dependencies :
@@ -30,6 +25,12 @@ Replace __PROXY_HOST__ and __PROXY_PORT__ to set http_proxy env
     - tomcat7
   -  postgres91
   -  postgres93
+
+###Notes :
+centos6/Dockerfile
+```
+Replace __PROXY_HOST__ and __PROXY_PORT__ to set http_proxy env
+```
 
 ###Results :
 ```
