@@ -12,6 +12,7 @@
 ---> Package ansible.noarch 0:1.8.4-1.el6 will be installed
 ---> Package python-paramiko.noarch 0:1.7.5-2.1.el6 will be installed
 ```
+
   - configuration
     - root@server:
 ```
@@ -20,6 +21,7 @@ su - ansible
 ssh-keygen -t rsa -C "ansible"
 chmod 600 .ssh/id_rsa*
 ```
+
     - root@client:
 ```
 useradd ansible
@@ -28,11 +30,13 @@ vi /etc/sudoers
 Defaults:ansible    !requiretty
 ansible         ALL=(ALL)       NOPASSWD: ALL
 ```
+
     - ansible@server:
 ```
 ssh-copy-id client
 ssh client
 ```
+
   - test
 ```
 ansible@server:$ ansible client -m ping
