@@ -1,10 +1,10 @@
 FROM cdelaitre/openjdk7
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
-##### ENV
+### ENV
 ENV TOMCAT_VERSION=7.0.59
 
-##### TOMCAT
+### TOMCAT
 RUN mkdir -p /produits
 ADD apache-tomcat-${TOMCAT_VERSION}.tar.gz /produits
 RUN mv /produits/apache-tomcat-${TOMCAT_VERSION} /produits/tomcat
