@@ -1,7 +1,7 @@
 # CI Continuous Integration
 
 ## dockerimages/
-Contains scripts and files to build images based on centos6
+Contains scripts and files to build docker images from official centos/centos6
 
 ###Requirements :
 - docker (used version 1.4.1)
