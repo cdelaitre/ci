@@ -1,2 +1,2 @@
-# i3p
-intégration continue
+# CI
+Continuous Integration
