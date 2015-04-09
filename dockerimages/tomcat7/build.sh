@@ -9,3 +9,6 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 docker build --rm=true -t "${NAME}/${TAG}" . |& tee ${LOG}
+if [ $? -eq 0 ]; then
+  rm -f ${FILE}
+fi
