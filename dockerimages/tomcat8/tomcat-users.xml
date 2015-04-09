@@ -41,7 +41,7 @@
 <role rolename="manager-status" />
 <role rolename="manager-script" />
 <role rolename="manager-jmx" />
-<user username="manager" password="manager" roles="manager-gui,manager-status,manager-script,manager-jmx" />
+<user username="manager" password="reganam" roles="manager-gui,manager-status,manager-script,manager-jmx" />
 <!-- user admin can access manager and admin section both -->
 <role rolename="admin-gui" />
 <role rolename="admin-script" />
