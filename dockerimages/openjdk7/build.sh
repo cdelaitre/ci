@@ -1,2 +1,5 @@
 #!/bin/bash
-docker build --rm=true -t "cdelaitre/openjdk7" . |& tee build.log
+NAME=cdelaitre
+TAG=openjdk7
+LOG=/tmp/build-${TAG}.log
+docker build --rm=true -t "${NAME}/${TAG}" . |& tee ${LOG}
