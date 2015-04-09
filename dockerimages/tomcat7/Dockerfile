@@ -1,4 +1,4 @@
-FROM cdelaitre/openjdk:7
+FROM cdelaitre/centos-openjdk:7
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
 ### TOMCAT
