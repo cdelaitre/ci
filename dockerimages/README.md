@@ -23,6 +23,8 @@ cd <image>
 - centos6
   - openjdk7
     - tomcat7
+  - openjdk8
+    - tomcat8
   -  postgres91
   -  postgres93
 
@@ -35,11 +37,13 @@ Replace __PROXY_HOST__ and __PROXY_PORT__ to set http_proxy env
 ###Results :
 ```
 $ docker images
-REPOSITORY                      TAG                 IMAGE ID            CREATED              VIRTUAL SIZE
-cdelaitre/postgres93            latest              580d5a0ba752        8 minutes ago        860.2 MB
-cdelaitre/postgres91            latest              dfabe6ecd462        About a minute ago   858.2 MB
-cdelaitre/tomcat7               latest              e408ee1e2026        About an hour ago    505.9 MB
-cdelaitre/openjdk7              latest              3789e54c1d62        About an hour ago    478.6 MB
-cdelaitre/centos6               latest              5eaa480be75a        About an hour ago    237.6 MB
-centos                          centos6             f6808a3e4d9e        4 weeks ago          215.7 MB
+REPOSITORY                      TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+cdelaitre/tomcat8               latest              cd69f14cee45        10 minutes ago      475.2 MB
+cdelaitre/openjdk8              latest              5efa774dc5c9        13 minutes ago      449 MB
+cdelaitre/postgres93            latest              580d5a0ba752        20 hours ago        860.2 MB
+cdelaitre/postgres91            latest              dfabe6ecd462        21 hours ago        858.2 MB
+cdelaitre/tomcat7               latest              e408ee1e2026        23 hours ago        505.9 MB
+cdelaitre/openjdk7              latest              3789e54c1d62        23 hours ago        478.6 MB
+cdelaitre/centos6               latest              5eaa480be75a        23 hours ago        237.6 MB
+centos                          centos6             f6808a3e4d9e        4 weeks ago         215.7 MB
 ```
