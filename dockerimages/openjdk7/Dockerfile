@@ -1,4 +1,4 @@
-FROM cdelaitre/centos6
+FROM cdelaitre/centos:6
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
 ##### ENV
