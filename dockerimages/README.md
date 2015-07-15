@@ -15,24 +15,18 @@
 ###Usage :
 ```
 cd <image>
-  image: centos6, openjdk7, tomcat7, postgres91, postgres93
+- image: centos6, openjdk7, tomcat7, postgres91, postgres93
 ./build.sh
 ```
 
 ###Image dependencies :
-- centos6
-  - openjdk7
-    - tomcat7
-  - openjdk8
-    - tomcat8
-  -  postgres91
-  -  postgres93
-
-###Notes :
-centos6/Dockerfile
-```
-Replace __PROXY_HOST__ and __PROXY_PORT__ to set http_proxy env
-```
+- centos:6
+  - openjdk:7
+    - tomcat:7
+  - openjdk:8
+    - tomcat:8
+  -  postgres:91
+  -  postgres:93
 
 ###Results :
 ```
