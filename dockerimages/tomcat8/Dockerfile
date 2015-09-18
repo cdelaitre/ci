@@ -2,7 +2,7 @@ FROM cdelaitre/centos-openjdk:8
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
 ### ENV
-ENV TOMCAT_VERSION=8.0.24
+ENV TOMCAT_VERSION=8.0.26
 
 ### TOMCAT
 RUN mkdir -p /produits

@@ -2,8 +2,8 @@
 NAME=cdelaitre
 TAG=centos-tomcat:8
 LOG=/tmp/build-${TAG}.log
-FILE=apache-tomcat-8.0.24.tar.gz
-curl http://apache.mirrors.ovh.net/ftp.apache.org/dist/tomcat/tomcat-8/v8.0.24/bin/${FILE} -o ${FILE}
+FILE=apache-tomcat-8.0.26.tar.gz
+curl http://apache.mirrors.ovh.net/ftp.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/${FILE} -o ${FILE}
 if [ $? -ne 0 ]; then
   echo "ERROR: unable to download [$URL]"
   exit 1
