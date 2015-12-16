@@ -1,5 +1,5 @@
 FROM java:8-jre
-MAINTAINER Christophe Delaitre <cdelaitre@igmail.com>
+MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
 ENV DISPLAY=:1.0
 RUN apt-get update && apt-get install -y vim xvfb python3 default-jre-headless python3-tk python3-pip python3-dev libxml2-dev libxslt-dev zlib1g-dev
