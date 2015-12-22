@@ -1,4 +1,4 @@
-FROM java:8-jdk
+FROM maven:3-8-jdk
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
 RUN apt-get update && apt-get install -y openssh-server git
