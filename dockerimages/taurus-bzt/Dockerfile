@@ -10,5 +10,9 @@ RUN rm -rf /var/lib/apt/lists/* && rm -rf /var/cache/*
 COPY quick_test.yml /root/
 WORKDIR /root
 RUN bzt quick_test.yml
+RUN rm -r /root/*-*-*_*-*-*.*
+RUN chmod a+x .bzt/jmeter-taurus/bin/jmeter .bzt/jmeter-taurus/bin/jmeter-server .bzt/jmeter-taurus/bin/*.sh
+RUN ln -s .bzt/jmeter-taurus/bin/jmeter
+RUN ln -s .bzt/jmeter-taurus/bin/jmeter-server
 
 CMD ["/bin/bash"]
