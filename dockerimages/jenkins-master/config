@@ -1,7 +1,7 @@
 # Config
 REGISTRY_HOST=docker-registry
 REGISTRY_PORT=52095
-IMAGE=ansiblebox
+IMAGE=jenkins-master
 VERSION=latest
 
 REGISTRY_URL=${REGISTRY_HOST}:${REGISTRY_PORT}
