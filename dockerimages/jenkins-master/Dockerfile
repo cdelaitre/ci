@@ -2,6 +2,7 @@ FROM jenkins
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
 USER root
+RUN apt-get update
 RUN apt-get install -y sudo
 RUN apt-get install -y software-properties-common
 RUN apt-add-repository ppa:ansible/ansible
