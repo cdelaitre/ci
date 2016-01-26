@@ -4,7 +4,7 @@ MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 USER root
 # Install ansible
 RUN apt-get update && \
-    apt-get install -y sudo vi && \
+    apt-get install -y sudo vim && \
     apt-get install -y --no-install-recommends software-properties-common && \
     apt-add-repository ppa:ansible/ansible && \
     apt-get install -y ansible && \
