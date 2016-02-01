@@ -4,7 +4,7 @@ MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 USER root
 # Install ansible
 RUN apt-get update && \
-    apt-get install -y sudo vim python-setuptools && \
+    apt-get install -y sudo vim python-setuptools python-crypto && \
 #    apt-get install -y --no-install-recommends software-properties-common && \
 #    apt-add-repository ppa:ansible/ansible && \
 #    apt-get install -y ansible && \
