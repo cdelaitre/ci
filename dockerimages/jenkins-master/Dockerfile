@@ -24,6 +24,6 @@ RUN cd /tmp && \
 RUN yes "" | adduser --disabled-password ansible
 # Configure jenkins user to sudoers
 RUN echo "Defaults:jenkins !requiretty" >> /etc/sudoers
-RUN echo "jenkins ALL=(ALL:ALL) NOPASSWD: sudo -u ansible ansible-playbook *" >> /etc/sudoers
+RUN echo "jenkins ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 # Switch back to jenkins
 USER jenkins
