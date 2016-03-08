@@ -1,11 +1,11 @@
 jenkins-home:
-  image: jenkins
+  image: cdelaitre/jenkins-master
   volumes:
    - /data/jenkins-home:/var/jenkins_home
   command: /bin/true
 
 jenkins-master:
-  image: jenkins
+  image: cdelaitre/jenkins-master
   ports:
     - "8080:8080"
     - "50000:50000"
