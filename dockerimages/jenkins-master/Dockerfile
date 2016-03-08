@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins:latest
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
 
 # Switch to root
