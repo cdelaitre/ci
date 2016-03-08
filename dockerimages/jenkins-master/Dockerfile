@@ -1,7 +1,17 @@
 FROM jenkins
 MAINTAINER Christophe Delaitre <cdelaitre@gmail.com>
+
+# Install Jenkins plugins
+COPY plugins.txt /usr/share/jenkins/plugins.txt
+RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
+
 # Switch to root
 USER root
+
+# Configure jenkins user to sudoers
+RUN echo "Defaults:jenkins !requiretty" >> /etc/sudoers
+RUN echo "jenkins ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 # Install ansible
 ENV ANSIBLE_VERSION=2.0.1.0
 RUN apt-get update && \
@@ -15,10 +25,9 @@ RUN cd /tmp && \
     cd /tmp && \
     rm ansible-${ANSIBLE_VERSION}.tar.gz && \
     rm -rf ansible-${ANSIBLE_VERSION}
-# Add user ansible
+
+# Add ansible user
 RUN yes "" | adduser --disabled-password ansible
-# Configure jenkins to sudoers
-RUN echo "Defaults:jenkins !requiretty" >> /etc/sudoers
-RUN echo "jenkins ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 # Switch back to jenkins
 USER jenkins
