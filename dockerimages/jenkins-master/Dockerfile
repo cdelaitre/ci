@@ -13,11 +13,11 @@ RUN apt-get update && \
 RUN cd /tmp && \
     curl -LO http://releases.ansible.com/ansible/ansible-${ANSIBLE_VERSION}.tar.gz && \
     tar -xzf ansible-${ANSIBLE_VERSION}.tar.gz && \
-    cd ansible-${ANSIBLE_VERSION} && \
+    cd ansible-* && \
     python setup.py install && \
     cd /tmp && \
     rm ansible-${ANSIBLE_VERSION}.tar.gz && \
-    rm -rf ansible-${ANSIBLE_VERSION}
+    rm -rf ansible-*
 # - Add user
 RUN yes "" | adduser --disabled-password ansible
 
