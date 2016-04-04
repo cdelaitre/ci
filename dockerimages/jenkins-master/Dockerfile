@@ -6,7 +6,7 @@ USER root
 
 # Ansible
 # - Install
-ENV ANSIBLE_VERSION=2.0.1.0
+ENV ANSIBLE_VERSION=latest
 RUN apt-get update && \
     apt-get install -y sudo vim python-setuptools python-crypto && \
     rm -rf /var/lib/apt/lists/*
