@@ -1,11 +1,11 @@
 jenkins-home:
-  image: cdelaitre/jenkins-master
+  image: cdelaitre/jenkins-master:2.0-beta-1
   volumes:
    - /data/jenkins-home:/var/jenkins_home
   command: /bin/true
 
 jenkins-master:
-  image: cdelaitre/jenkins-master
+  image: cdelaitre/jenkins-master:2.0-beta-1
   ports:
     - "8080:8080"
     - "50000:50000"
