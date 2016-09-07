@@ -3,6 +3,7 @@ FROM php:5-apache
 RUN apt-get update && apt-get install -y \
 	openssh-client \
 	libssh2-1 \
+	libssh2-1-dev \
 	vim \
 	--no-install-recommends && rm -r /var/lib/apt/lists/*
 # install ssh2 module
