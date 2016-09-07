@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM php:5-apache
 # install ssh-client
 RUN apt-get update && apt-get install -y \
 	openssh-client \
@@ -8,4 +8,3 @@ RUN apt-get update && apt-get install -y \
 RUN \
 	pecl install ssh2 \
 	&& echo "extension=ssh2.so" > /usr/local/etc/php/conf.d/ext-ssh2.ini
-
